@@ -75,7 +75,7 @@ class TestLogger:
         assert len(lines) == 1
         entry = json.loads(lines[0])
         assert entry["type"] == "request"
-        assert "example.com" in entry["url"]
+        assert entry["url"] == "http://example.com/path?q=1"
         assert entry["method"] == "GET"
 
     def test_response_logged(self, tmp_path, monkeypatch):

@@ -7,7 +7,7 @@ Examples of what this addon can do:
   • Replace text in response bodies (string substitution)
   • Add CORS headers to every response (useful for local API testing)
 
-Edit the HEADER_INJECTIONS, RESPONSE_HEADER_INJECTIONS, and BODY_REPLACEMENTS
+Edit the REQUEST_HEADER_INJECTIONS, RESPONSE_HEADER_INJECTIONS, and BODY_REPLACEMENTS
 dictionaries below, or subclass / extend Modifier for more complex scenarios.
 """
 
